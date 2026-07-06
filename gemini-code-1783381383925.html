@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconectado | O Colapso Digital</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <div id="cursor"></div>
+
+    <div id="webgl-container"></div>
+
+    <main>
+        <section id="hero">
+            <h1>O Fim da<br>Conexão</h1>
+            <p>Os servidores silenciaram. Não houve aviso. A nuvem se dissipou, levando consigo a memória coletiva da humanidade. Bem-vindo ao abismo analógico.</p>
+        </section>
+
+        <section id="impactos">
+            <div class="glass-panel">
+                <h2>Impactos Estruturais</h2>
+                <ul>
+                    <li><strong>Colapso Financeiro:</strong> O dinheiro digital evaporou em milissegundos. Sem internet, bancos não puderam verificar saldos. O escambo e moedas físicas voltaram a ser a única realidade.</li>
+                    <li><strong>Caos Logístico:</strong> Frotas de transporte guiadas por GPS e softwares de gestão pararam. Supermercados esvaziaram em 48 horas.</li>
+                    <li><strong>Fragmentação Social:</strong> Sem comunicação global, o mundo encolheu. Comunidades voltaram a se organizar em tribos locais, isoladas do resto do planeta.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="game-section">
+            <div class="glass-panel game-panel">
+                <h2>A Faísca (Simulação de Sobrevivência)</h2>
+                <p>O mundo escureceu. Mantenha sua fogueira da sanidade acesa.</p>
+                <ul class="game-instructions">
+                    <li><strong>Mover:</strong> W, A, S, D</li>
+                    <li><strong>Coletar:</strong> Páginas amarelas (pontos) e Lenha marrom (inventário).</li>
+                    <li><strong>Ação:</strong> Pressione <strong>[ E ]</strong> para jogar lenha na fogueira e recuperar sanidade.</li>
+                    <li><strong>Cuidado:</strong> Evite as sombras perseguidoras.</li>
+                </ul>
+                
+                <div id="game-container">
+                    <div id="game-ui">
+                        <div>Sanidade: <span id="sanity-score">100</span>% | Páginas: <span id="pages-score">0</span></div>
+                        <div class="inventory">Inventário [E]: <span id="inv-slots">0 Lenhas</span></div>
+                    </div>
+                    <canvas id="survival-game"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
